@@ -1,6 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-if [ -f /data/.g3m/b1x ]; then
+if [ -f /data/local/b1x ]; then
 
 #modpes
 su -c settings put global airplane_mode_on 1
