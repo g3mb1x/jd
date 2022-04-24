@@ -27,7 +27,7 @@ su -c input text %s$(shuf -n 1 m2)
 
 #alamat
 su -c input keyevent DPAD_UP DPAD_UP
-su -c input text Jl.%s"$(shuf -n 1 jln)"%sNo.%sV"$(shuf -i 900-999 -n 1)"/%sBlok%sV"$(shuf -i 90-99 -n 1)"
+su -c input text Jl.%s$(shuf -n 1 jln)%sNo.%sV$(shuf -i 900-999 -n 1)/%sBlok%sV$(shuf -i 90-99 -n 1)
 
 #wilayah
 su -c input keyevent DPAD_UP DPAD_UP SPACE
