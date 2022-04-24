@@ -1,0 +1,48 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+if [ -f /data/.g3m/b1x ]; then
+
+#cari alamat
+su -c am start -S -W jd.cdyjy.overseas.market.indonesia/jd.overseas.market.address.view.activity.ActivitySearchPlaces
+su -c input text $(shuf -n 1 slo)
+sleep 2
+su -c input keyevent $(shuf -n 1 5) SPACE
+sleep 5
+
+#jump
+#su -c input swipe 440 540 $(shuf -i 340-640 -n 1) $(shuf -i 340-640 -n 1)
+#sleep 5
+
+#default
+su -c input keyevent DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN SPACE
+
+#hp
+su -c input keyevent DPAD_UP DPAD_UP DPAD_UP
+su -c input text 08$RANDOM$RANDOM$RANDOM
+
+#nama
+su -c input keyevent DPAD_UP DPAD_UP
+su -c input text $(shuf -n 1 m2)
+su -c input text %s$(shuf -n 1 m2)
+
+#alamat
+su -c input keyevent DPAD_UP DPAD_UP
+su -c input text Jl.%s"$(shuf -n 1 jln)"%sNo.%sV"$(shuf -i 900-999 -n 1)"/%sBlok%sV"$(shuf -i 90-99 -n 1)"
+
+#wilayah
+su -c input keyevent DPAD_UP DPAD_UP SPACE
+sleep 0.5
+su -c input keyevent DPAD_DOWN DPAD_DOWN DPAD_DOWN SPACE DEL
+sleep 0.5
+su -c input keyevent DPAD_DOWN SPACE DEL
+sleep 0.5
+su -c input keyevent DPAD_DOWN SPACE DEL
+
+#simpan
+su -c input keyevent DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN TAB SPACE
+
+else 
+su -c reboot -p
+fi
+
+exit 0

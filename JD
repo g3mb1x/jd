@@ -1,0 +1,20 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+#daftar jdid
+su -c am start -S jd.cdyjy.overseas.market.indonesia/jdid.login_module.global.activity.ActivityRegister
+sleep 3
+su -c input keyevent TAB TAB ENTER TAB TAB
+sleep 0.5
+
+#email
+su -c input keyevent PASTE DEL
+su -c input text @outlook.co.id
+
+#password
+su -c input keyevent DPAD_DOWN DPAD_DOWN DPAD_LEFT
+su -c input text nko9mlp0
+
+#capcay
+su -c input keyevent DPAD_UP DPAD_UP DPAD_UP ENTER ENTER
+
+exit 0

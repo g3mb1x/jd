@@ -1,0 +1,34 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+#modpes
+su -c settings put global airplane_mode_on 1
+su -c am broadcast -a android.intent.action.AIRPLANE_MODE
+sleep 0.5
+su -c settings put global airplane_mode_on 0
+su -c am broadcast -a android.intent.action.AIRPLANE_MODE
+
+su -c am start -S -W com.device.emulator.pro/.MainActivity
+su -c am start -S -W gem.bix.de/.MainActivity
+
+#filex
+su -c am force-stop com.gojek.app
+su -c am force-stop com.grabtaxi.passenger
+su -c am force-stop ua.browser.operator784
+su -c am force-stop jd.cdyjy.overseas.market.indonesia
+su -c am force-stop vtechnotm.com.deviceid
+
+su -c am force-stop com.google.android.gms
+su -c am force-stop com.android.vending
+su -c am kill-all
+
+su -c rm -rf /sdcard/Android/data/jd.cdyjy.overseas.market.indonesia/
+su -c rm -rf /sdcard/Android/data/com.google.android.gms/
+su -c rm -rf /sdcard/Android/data/com.android.vending/
+su -c rm -rf /sdcard/Android/data/ua.browser.operator784/
+su -c rm -rf /sdcard/Android/data/com.gojek.app/
+su -c rm -rf /sdcard/Android/data/com.grabtaxi.passenger/
+
+su -c am force-stop com.device.emulator.pro
+su -c am force-stop gem.bix.de
+
+exit 0
