@@ -1,6 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-if [ -f /data/.g3m/b1x ]; then
+if [ -f /data/local/b1x ]; then
 
 #cari alamat
 su -c am start -S -W jd.cdyjy.overseas.market.indonesia/jd.overseas.market.address.view.activity.ActivitySearchPlaces
