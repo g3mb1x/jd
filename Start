@@ -1,6 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-if [ -f /data/local/b1x ]; then
+host=$(getprop ro.build.host)
+if [ $host==g3mb1x ]; then
 
 #modpes
 su -c settings put global airplane_mode_on 1
