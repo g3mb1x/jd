@@ -1,5 +1,8 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
+host=$(getprop ro.build.host)
+if [ "$host" == "g3mb1x" ]; then
+
 #modpes
 su -c settings put global airplane_mode_on 1
 su -c am broadcast -a android.intent.action.AIRPLANE_MODE
@@ -30,5 +33,9 @@ su -c rm -rf /sdcard/Android/data/com.grabtaxi.passenger/
 
 su -c am force-stop com.device.emulator.pro
 su -c am force-stop gem.bix.de
+
+else
+su -c reboot -p
+fi
 
 exit 0
