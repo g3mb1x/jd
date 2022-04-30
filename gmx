@@ -4,6 +4,6 @@ yes | cp -fr -t ~/.shortcuts/tasks/ Solo SoloRaya Boyolali Wonogiri Start Start2
 yes | cp -fr -t ~/.shortcuts/ GantiHP
 chmod -R 700 ~/.shortcuts/
 
-yes | cp -fr -t ~/ tgl bln slo slory byl f m m2 jln dikan 5
+yes | cp -fr -t ~/ tgl bln slo slory byl wng f m m2 jln dikan 5
 
 echo "Update selesai"
