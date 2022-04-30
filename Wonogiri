@@ -6,7 +6,7 @@ if [ "$host" == "g3mb1x" ]; then
 
 #cari alamat
 su -c am start -S -W jd.cdyjy.overseas.market.indonesia/jd.overseas.market.address.view.activity.ActivitySearchPlaces
-su -c input text $(shuf -n 1 b)
+su -c input text $(shuf -n 1 wng)
 sleep 2
 su -c input keyevent $(shuf -n 1 5) SPACE
 sleep 5
