@@ -36,7 +36,7 @@ su -c rm -rf /sdcard/Android/data/com.grabtaxi.passenger/
 
 #OUTLOOK
 su -c am start ua.browser.operator784/.MainActivity
-sleep 8
+sleep 10
 
 #username
 U=$(pwgen "$(shuf -i 8-20 -n 1)" 1)
