@@ -1,9 +1,9 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-yes | cp -fr -t ~/.shortcuts/tasks/ Solo SoloRaya Boyolali Wonogiri Start Start2 Clear JD
+yes | cp -fr -t ~/.shortcuts/tasks/ Solo SoloRaya Boyolali Wonogiri Karanganyar Start Start2 Clear JD
 yes | cp -fr -t ~/.shortcuts/ GantiHP
 chmod -R 700 ~/.shortcuts/
 
-yes | cp -fr -t ~/ tgl bln slo slory byl wng f m m2 jln dikan 5
+yes | cp -fr -t ~/ tgl bln slo slory byl wng kry f m m2 jln dikan 5
 
 echo "Update selesai"
