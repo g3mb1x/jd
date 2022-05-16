@@ -12,6 +12,7 @@ su -c am broadcast -a android.intent.action.AIRPLANE_MODE
 su -c am start -S gem.bix.de/gem.bix.de.MainActivity
 sleep 0.5
 su -c input keyevent DPAD_DOWN DPAD_RIGHT DPAD_RIGHT SPACE DPAD_DOWN SPACE DPAD_RIGHT DPAD_RIGHT SPACE
+sleep 0.2
 su -c input keyevent DPAD_LEFT DPAD_LEFT SPACE DPAD_RIGHT SPACE
 
 #filex
