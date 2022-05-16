@@ -2,9 +2,8 @@
 
 #daftar jdid
 su -c am start -S jd.cdyjy.overseas.market.indonesia/jdid.login_module.global.activity.ActivityRegister
-sleep 3
-su -c input keyevent TAB TAB ENTER TAB TAB
-sleep 0.5
+sleep 1
+su -c input keyevent DPAD_RIGHT DPAD_RIGHT SPACE TAB TAB
 
 #email
 su -c input keyevent PASTE DEL
