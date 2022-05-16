@@ -33,21 +33,6 @@ sleep 1
 su -c am start -S jd.cdyjy.overseas.market.indonesia/jd.overseas.market.order.list.ActivitySearchOrder
 sleep 0.5
 su -c input keyevent TAB DPAD_RIGHT SPACE
-su -c input text Angpao
-su -c input keyevent DPAD_RIGHT DPAD_RIGHT SPACE
-sleep 0.5
-su -c input keyevent DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN SPACE
-sleep 0.5
-su -c input keyevent DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN SPACE
-sleep 1
-su -c input keyevent TAB TAB TAB TAB TAB SPACE
-sleep 0.3
-su -c input keyevent DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN SPACE
-sleep 1
-
-su -c am start -S jd.cdyjy.overseas.market.indonesia/jd.overseas.market.order.list.ActivitySearchOrder
-sleep 0.5
-su -c input keyevent TAB DPAD_RIGHT SPACE
 su -c input text 3+
 su -c input keyevent DPAD_RIGHT DPAD_RIGHT SPACE
 sleep 0.5
