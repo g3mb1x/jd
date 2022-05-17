@@ -11,10 +11,10 @@ su -c am broadcast -a android.intent.action.AIRPLANE_MODE
 
 #start DE
 su -c am start -S gem.bix.de/gem.bix.de.MainActivity
-sleep 0.5
-su -c input keyevent DPAD_DOWN DPAD_RIGHT DPAD_RIGHT SPACE DPAD_DOWN SPACE DPAD_RIGHT DPAD_RIGHT SPACE
-sleep 0.2
-su -c input keyevent DPAD_LEFT DPAD_LEFT SPACE DPAD_RIGHT SPACE
+sleep 1
+su -c input keyevent DPAD_DOWN DPAD_RIGHT DPAD_RIGHT SPACE DPAD_DOWN SPACE
+su -c input keyevent DPAD_RIGHT DPAD_RIGHT SPACE
+su -c input keyevent DPAD_UP DPAD_LEFT DPAD_LEFT SPACE DPAD_RIGHT SPACE
 
 #filex
 su -c am force-stop jd.cdyjy.overseas.market.indonesia
