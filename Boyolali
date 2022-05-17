@@ -1,42 +1,36 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-host=$(getprop ro.build.host)
-if [ "$host" == "g3mb1x" ]; then
+if [ $(getprop ro.build.host) == g3mb1x ]; then
 
 #cari alamat
 su -c am start -S -W jd.cdyjy.overseas.market.indonesia/jd.overseas.market.address.view.activity.ActivitySearchPlaces
 su -c input text $(shuf -n 1 byl)
 sleep 2
-su -c input keyevent $(shuf -n 1 5) SPACE
-sleep 5
-
-#jump
-#su -c input swipe 440 540 $(shuf -i 340-640 -n 1) $(shuf -i 340-640 -n 1)
-#sleep 5
+su -c input keyevent $(shuf -n $(shuf -n 1 -e {2..10}) -e TAB TAB TAB TAB TAB TAB TAB TAB TAB TAB | xargs) SPACE
+sleep 6
 
 #default
 su -c input keyevent DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN SPACE
 
 #hp
 su -c input keyevent DPAD_UP DPAD_UP DPAD_UP
-su -c input text 08$RANDOM$RANDOM$RANDOM
+su -c input text 08$(shuf -n 10 -erz {0..9})
 
 #nama
 su -c input keyevent DPAD_UP DPAD_UP
-su -c input text $(shuf -n 1 f)
-su -c input text %sChantika%s$(shuf -n 1 m)
+su -c input text $(shuf -n 1 nama)%s$(shuf -n 1 nama)
 
 #alamat
 su -c input keyevent DPAD_UP DPAD_UP
-su -c input text Jl.%s$(shuf -n 1 jln)%sNo.%sP$(shuf -i 900-999 -n 1)/%sBlok%sP$(shuf -i 90-99 -n 1)
+su -c input text $(shuf -n 1 -e Jl Jln Jalan Gg Gang Blok Kp Kampung Dk Dukuh)%s$(shuf -n 1 nama)%s$(shuf -n 1 dikan)%s$(shuf -n 1 -e RT RW Lt Lantai Blok Kamar Nomor No)%s$(su -c cat /data/.g3m/b1x)$(shuf -i 1-100 -n 1)
 
 #wilayah
 su -c input keyevent DPAD_UP DPAD_UP SPACE
-sleep 0.5
-su -c input keyevent DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN SPACE DEL
-sleep 0.5
+sleep 0.3
+su -c input keyevent DPAD_DOWN DPAD_DOWN DPAD_DOWN SPACE DEL
+sleep 0.2
 su -c input keyevent DPAD_DOWN SPACE DEL
-sleep 0.5
+sleep 0.2
 su -c input keyevent DPAD_DOWN SPACE DEL
 
 #simpan
