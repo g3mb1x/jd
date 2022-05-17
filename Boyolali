@@ -26,11 +26,11 @@ su -c input text $(shuf -n 1 -e Jl Jln Jalan Gg Gang Blok Kp Kampung Dk Dukuh)%s
 
 #wilayah
 su -c input keyevent DPAD_UP DPAD_UP SPACE
-sleep 0.3
-su -c input keyevent DPAD_DOWN DPAD_DOWN DPAD_DOWN SPACE DEL
-sleep 0.2
+sleep 0.5
+su -c input keyevent DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN SPACE DEL
+sleep 0.5
 su -c input keyevent DPAD_DOWN SPACE DEL
-sleep 0.2
+sleep 0.5
 su -c input keyevent DPAD_DOWN SPACE DEL
 
 #simpan
