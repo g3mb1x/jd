@@ -1,36 +1,28 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-host=$(getprop ro.build.host)
-if [ "$host" == "g3mb1x" ]; then
-
+if [ $(getprop ro.build.host) == g3mb1x ]; then
 
 #cari alamat
 su -c am start -S -W jd.cdyjy.overseas.market.indonesia/jd.overseas.market.address.view.activity.ActivitySearchPlaces
 su -c input text $(shuf -n 1 kry)
 sleep 2
-su -c input keyevent $(shuf -n 1 5) SPACE
-sleep 5
-
-#jump
-#su -c input swipe 440 540 $(shuf -i 340-640 -n 1) $(shuf -i 340-640 -n 1)
-#sleep 5
+su -c input keyevent $(shuf -n $(shuf -n 1 -e {2..10}) -e TAB TAB TAB TAB TAB TAB TAB TAB TAB TAB | xargs) SPACE
+sleep 6
 
 #default
 su -c input keyevent DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN SPACE
 
 #hp
 su -c input keyevent DPAD_UP DPAD_UP DPAD_UP
-su -c input text 08$RANDOM$RANDOM$RANDOM
+su -c input text 08$(shuf -n 10 -erz {0..9})
 
 #nama
 su -c input keyevent DPAD_UP DPAD_UP
-su -c input text $(shuf -n 1 f)
-su -c input text %s$(shuf -n 1 m)
+su -c input text $(shuf -n 1 nama)%s$(shuf -n 1 nama)
 
 #alamat
 su -c input keyevent DPAD_UP DPAD_UP
-su -c input text Jl.%s$(shuf -n 1 jln)
-su -c input text %s$(shuf -i 91-99 -n 1)%sRT.$(shuf -i 1-15 -n 1)%sRW.$(shuf -i 1-5 -n 1)
+su -c input text Jl.%s$(shuf -n 1 nama)%s$(shuf -i 91-99 -n 1)%sRT.$(shuf -i 1-15 -n 1)%sRW.$(shuf -i 1-5 -n 1)
 
 #wilayah
 su -c input keyevent DPAD_UP DPAD_UP SPACE
