@@ -1,8 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-host=$(getprop ro.build.host)
-if [ "$host" == "g3mb1x" ]; then
-
+if [ $(getprop ro.build.host) == g3mb1x ]; then
 
 #cari alamat
 su -c am start -S -W jd.cdyjy.overseas.market.indonesia/jd.overseas.market.address.view.activity.ActivitySearchPlaces
@@ -20,16 +18,15 @@ su -c input keyevent DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN
 
 #hp
 su -c input keyevent DPAD_UP DPAD_UP DPAD_UP
-su -c input text 08$RANDOM$RANDOM$RANDOM
+su -c input text 08$(shuf -n 10 -erz {0..9})
 
 #nama
 su -c input keyevent DPAD_UP DPAD_UP
-su -c input text Joko%sKuat%s$(shuf -n 1 m)
+su -c input text Joko%sKuat%s$(shuf -n 1 nama)
 
 #alamat
-b1x=$(su -c cat /data/.g3m/b1x)
 su -c input keyevent DPAD_UP DPAD_UP
-su -c input text Jl.%s$(shuf -n 1 jln)%sNo.$b1x$(shuf -i 1-100 -n 1)%sRT.$(shuf -i 1-15 -n 1)%sRW.$(shuf -i 1-5 -n 1)
+su -c input text $(shuf -n 1 -e Jl Jln Jalan Gg Gang Blok Kp Kampung Dk Dukuh)%s$(shuf -n 1 nama)%s$(shuf -n 1 dikan)%s$(shuf -n 1 -e RT RW Lt Lantai Blok Kamar Nomor No)%s$(su -c cat /data/.g3m/b1x)$(shuf -i 1-100 -n 1)
 
 #simpan
 su -c input keyevent DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN TAB SPACE
