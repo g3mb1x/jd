@@ -8,7 +8,7 @@ if [ "$host" == "g3mb1x" ]; then
 su -c am start -S -W jd.cdyjy.overseas.market.indonesia/jd.overseas.market.address.view.activity.ActivitySearchPlaces
 su -c input text $(shuf -n 1 drop)
 sleep 2
-su -c input keyevent $(shuf -n 1 5) SPACE
+su -c input keyevent $(shuf -n 1 7) SPACE
 sleep 5
 
 #jump
