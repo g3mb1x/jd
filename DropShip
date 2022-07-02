@@ -3,11 +3,11 @@
 if [ $(getprop ro.build.host) == g3mb1x ]; then
 
 #cari alamat
-su -c am start -S -W jd.cdyjy.overseas.market.indonesia/jd.overseas.market.address.view.activity.ActivitySearchPlaces
+su -c am start -S jd.cdyjy.overseas.market.indonesia/jd.overseas.market.address.view.activity.ActivitySearchPlaces
 su -c input text $(shuf -n 1 drop)
 sleep 2
-su -c input keyevent $(shuf -n 1 7) SPACE
-sleep 5
+su -c input keyevent $(shuf -n $(shuf -n 1 -e {2..6}) -e TAB TAB TAB TAB TAB TAB | xargs) SPACE
+sleep 6
 
 #jump
 #su -c input swipe 440 540 $(shuf -i 340-640 -n 1) $(shuf -i 340-640 -n 1)
