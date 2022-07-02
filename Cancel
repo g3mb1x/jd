@@ -1,5 +1,100 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
+#tanpa vc
+termux-open https://m.jd.id/product/bango-kecap-manis-pouch-2pcs-x-520ml-twinpack_637833130/637833131.html
+sleep 1
+su -c input keyevent TAB TAB SPACE
+su -c input keyevent DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_LEFT SPACE
+sleep 0.3
+
+termux-open https://m.jd.id/product/giordano-kaos-men-s-new-crew-neck-tee-iceland-poppy-l_661659423/661660342.html
+sleep 1
+su -c input keyevent TAB TAB SPACE
+su -c input keyevent DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_LEFT SPACE
+sleep 0.3
+
+su -c am start jd.cdyjy.overseas.market.indonesia/jd.cdyjy.overseas.jd_id_shopping_cart.activity.ShoppingCartActivity
+sleep 1
+su -c input tap 960 1980
+sleep 1.5
+su -c input tap 540 1730
+sleep 0.3
+su -c input tap 900 1980
+sleep 1
+
+#klaim dan kode vc
+su -c am start -S -W jd.cdyjy.overseas.market.indonesia/.ui.activity.ActivityFlash
+sleep 2
+su -c input keyevent TAB TAB TAB TAB DPAD_RIGHT SPACE
+su -c input swipe 540 540 200 540
+su -c input swipe 540 540 200 540
+su -c input keyevent TAB SPACE
+sleep 4
+su -c input keyevent PAGE_DOWN ENTER PAGE_DOWN ENTER
+sleep 1
+
+termux-open https://u.jd.id/tCPoOd2
+sleep 6
+termux-open https://m.jd.id/product/pepsodent-pasta-gigi-pencegah-gigi-berlubang-190g_10113408/100260505.html
+sleep 2
+su -c input tap 320 2000
+su -c input keyevent DPAD_RIGHT DPAD_RIGHT DPAD_RIGHT SPACE SPACE SPACE SPACE
+su -c input keyevent DPAD_DOWN DPAD_LEFT SPACE
+sleep 0.5
+
+termux-open https://m.jd.id/product/ns1131-perf-look-lucky-ox-angpao_624727854/624727855.html
+sleep 2
+su -c input keyevent TAB TAB SPACE
+su -c input keyevent DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_LEFT SPACE
+sleep 0.5
+
+su -c am start jd.cdyjy.overseas.market.indonesia/jd.cdyjy.overseas.jd_id_shopping_cart.activity.ShoppingCartActivity
+sleep 1
+su -c input tap 960 1980
+sleep 2
+su -c input tap 540 1730
+sleep 0.3
+su -c input tap 540 1870
+sleep 0.3
+su -c input tap 970 1160
+sleep 0.3
+su -c input tap 540 1960
+sleep 0.3
+su -c input tap 900 1980
+sleep 1
+
+termux-open https://m.jd.id/product/pepsodent-pasta-gigi-pencegah-gigi-berlubang-190g_10113408/100260505.html
+sleep 2
+su -c input tap 320 2000
+su -c input keyevent DPAD_RIGHT DPAD_RIGHT DPAD_RIGHT SPACE SPACE SPACE SPACE SPACE
+su -c input keyevent DPAD_DOWN DPAD_LEFT SPACE
+sleep 0.5
+
+termux-open https://m.jd.id/product/ns1131-perf-look-lucky-ox-angpao_624727854/624727855.html
+sleep 2
+su -c input keyevent TAB TAB SPACE
+su -c input keyevent DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_LEFT SPACE
+sleep 0.5
+
+su -c am start jd.cdyjy.overseas.market.indonesia/jd.cdyjy.overseas.jd_id_shopping_cart.activity.ShoppingCartActivity
+sleep 1
+su -c input tap 960 1980
+sleep 2
+su -c input tap 540 1730
+sleep 0.3
+su -c input tap 540 1870
+sleep 0.3
+su -c input keyevent TAB TAB TAB TAB SPACE
+su -c input text ulioral6k
+su -c input tap 980 360
+sleep 0.5
+su -c input tap 540 1960
+sleep 0.3
+su -c input tap 900 1980
+sleep 1
+
+#cancel
+
 su -c am start -S jd.cdyjy.overseas.market.indonesia/jd.overseas.market.order.list.ActivitySearchOrder
 sleep 0.5
 su -c input keyevent TAB DPAD_RIGHT SPACE
