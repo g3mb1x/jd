@@ -6,7 +6,7 @@ if [ $(getprop ro.build.host) == g3mb1x ]; then
 su -c am start -S -W jd.cdyjy.overseas.market.indonesia/jd.overseas.market.address.view.activity.ActivitySearchPlaces
 su -c input text $(shuf -n 1 slory)
 sleep 2
-su -c input keyevent $(shuf -n 1 7) SPACE
+su -c input keyevent $(shuf -n $(shuf -n 1 -e {2..6}) -e TAB TAB TAB TAB TAB TAB | xargs) SPACE
 sleep 6
 
 #default
