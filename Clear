@@ -9,6 +9,8 @@ su -c settings put global airplane_mode_on 0
 su -c am broadcast -a android.intent.action.AIRPLANE_MODE
 
 su -c am start -S gem.bix.de/.MainActivity
+sleep 1
+su -c input keyevent TAB TAB SPACE 
 
 #filex
 su -c am force-stop ua.browser.operator784
