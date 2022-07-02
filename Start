@@ -5,7 +5,6 @@ if [ $(getprop ro.build.host) == g3mb1x ]; then
 #modpes
 su -c settings put global airplane_mode_on 1
 su -c am broadcast -a android.intent.action.AIRPLANE_MODE
-sleep 0.5
 su -c settings put global airplane_mode_on 0
 su -c am broadcast -a android.intent.action.AIRPLANE_MODE
 
@@ -17,8 +16,10 @@ su -c input keyevent DPAD_RIGHT DPAD_RIGHT SPACE
 su -c input keyevent DPAD_LEFT DPAD_LEFT DPAD_LEFT SPACE SPACE SPACE DPAD_RIGHT SPACE
 
 #filex
+su -c am force-stop ua.browser.operator784
 su -c am force-stop jd.cdyjy.overseas.market.indonesia
 su -c am force-stop com.google.android.gms
+su -c am force-stop com.android.vending
 su -c rm -rf /sdcard/Android/
 
 #OUTLOOK
