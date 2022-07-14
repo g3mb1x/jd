@@ -18,7 +18,7 @@ su -c input text 08$(shuf -n 10 -erz {0..9})
 
 #nama
 su -c input keyevent DPAD_UP DPAD_UP
-su -c input text $(shuf -n 1 nama)%s$(shuf -n 1 nama)
+su -c input text $(shuf -n 1 nama)%s$(su -c cat /data/.g3m/b1x)%s$(shuf -n 1 nama)
 
 #alamat
 su -c input keyevent DPAD_UP DPAD_UP
