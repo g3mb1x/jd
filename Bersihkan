@@ -1,0 +1,17 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+echo "sabar ya bos"
+su -c find /data/data/jd.cdyjy.overseas.market.indonesia/ -type d -name app_appcache -exec rm -rf {} +
+su -c find /data/data/jd.cdyjy.overseas.market.indonesia/ -type d -name app_database -exec rm -rf {} +
+su -c find /data/data/jd.cdyjy.overseas.market.indonesia/ -type d -name app_databases -exec rm -rf {} +
+su -c find /data/data/jd.cdyjy.overseas.market.indonesia/ -type d -name app_flutter -exec rm -rf {} +
+su -c find /data/data/jd.cdyjy.overseas.market.indonesia/ -type d -name app_geolocation -exec rm -rf {} +
+su -c find /data/data/jd.cdyjy.overseas.market.indonesia/ -type d -name app_google_tagmanager -exec rm -rf {} +
+su -c find /data/data/jd.cdyjy.overseas.market.indonesia/ -type d -name app_reactnative -exec rm -rf {} +
+su -c find /data/data/jd.cdyjy.overseas.market.indonesia/ -type d -name app_reactpreload -exec rm -rf {} +
+su -c find /data/data/jd.cdyjy.overseas.market.indonesia/ -type d -name app_textures -exec rm -rf {} +
+su -c find /data/data/jd.cdyjy.overseas.market.indonesia/ -type d -name app_webview -exec rm -rf {} +
+su -c find /data/data/jd.cdyjy.overseas.market.indonesia/ -type d -name cache -exec rm -rf {} +
+su -c find /data/data/jd.cdyjy.overseas.market.indonesia/ -type d -name code_cache -exec rm -rf {} +
+
+read -p "sudah bersih bos, silakan tekan enter!"
