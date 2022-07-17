@@ -1,7 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
 yes | cp -fr -t ~/.shortcuts/tasks/ Solo SoloRaya Boyolali Wonogiri Karanganyar DropShip Petra Start Clear JD Cancel
-yes | cp -fr -t ~/.shortcuts/ GantiHP
+yes | cp -fr -t ~/.shortcuts/ GantiHP Bersihkan
 chmod -R 700 ~/.shortcuts/
 
 yes | cp -fr -t ~/ slo slory byl wng kry drop nama jln dikan chantika
