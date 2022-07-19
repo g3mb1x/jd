@@ -16,15 +16,16 @@ su -c input keyevent DPAD_RIGHT DPAD_RIGHT SPACE
 su -c input keyevent DPAD_LEFT DPAD_LEFT DPAD_LEFT SPACE SPACE SPACE DPAD_RIGHT SPACE
 
 #filex
+su -c am force-stop com.wajual
 su -c am force-stop ua.browser.operator784
 su -c am force-stop jd.cdyjy.overseas.market.indonesia
 su -c am force-stop com.google.android.gms
 su -c am force-stop com.android.vending
-su -c rm -rf /sdcard/Android/
+su -c rm -rf /sdcard/Android/data/
 
 #OUTLOOK
 su -c am start -S ua.browser.operator784/.MainActivity
-sleep 9
+sleep 10
 
 #username
 username=$(shuf -n 1 -erz {A..Z} && shuf -n 1 -erz {A..Z} | shuf -n $(shuf -n 1 -e {7..17}) -erz {A..Z} {a..z} {0..9})
