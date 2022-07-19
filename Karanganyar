@@ -4,10 +4,11 @@ if [ $(getprop ro.build.host) == g3mb1x ]; then
 
 #cari alamat
 su -c am start -S jd.cdyjy.overseas.market.indonesia/jd.overseas.market.address.view.activity.ActivitySearchPlaces
+sleep 0.3
 su -c input text $(shuf -n 1 kry)
 sleep 2
 su -c input keyevent $(shuf -n 1 -e 'DPAD_DOWN DPAD_DOWN' 'DPAD_DOWN DPAD_DOWN DPAD_DOWN' 'DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN' | xargs) SPACE
-sleep 6
+sleep 7
 
 #default
 su -c input keyevent DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN DPAD_DOWN SPACE
