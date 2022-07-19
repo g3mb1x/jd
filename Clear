@@ -13,11 +13,12 @@ sleep 1
 su -c input keyevent TAB TAB SPACE 
 
 #filex
+su -c am force-stop com.wajual
 su -c am force-stop ua.browser.operator784
 su -c am force-stop jd.cdyjy.overseas.market.indonesia
 su -c am force-stop com.google.android.gms
 su -c am force-stop com.android.vending
-su -c rm -rf /sdcard/Android/
+su -c rm -rf /sdcard/Android/data/
 
 su -c am start com.android.launcher3/.shady.ShadyLauncher
 
