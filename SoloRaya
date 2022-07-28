@@ -25,9 +25,9 @@ su -c input keyevent DPAD_UP DPAD_UP
 su -c input text $(shuf -n 1 -e Jl Jln Jalan Gg Gang Blok Kp Kampung Dk Dukuh)%s$(shuf -n 1 nama)%s$(shuf -n 1 dikan)%s$(shuf -n 1 -e RT RW Lt Lantai Blok Kamar Nomor No)%s$(su -c cat /data/.g3m/b1x)$(shuf -i 1-100 -n 1)
 
 #wilayah
-su -c input keyevent DPAD_UP DPAD_UP SPACE
+su -c input keyevent DPAD_UP DPAD_UP SPACE DEL
 sleep 0.3
-su -c input keyevent DPAD_DOWN DPAD_DOWN DPAD_DOWN SPACE DEL
+su -c input keyevent DPAD_DOWN DPAD_DOWN DPAD_DOWN SPACE SPACE
 sleep 0.2
 su -c input keyevent DPAD_DOWN SPACE DEL
 sleep 0.2
